@@ -1,0 +1,268 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: gray;
+    margin: 0;
+    font-family: sans-serif;
+}
+header.new {
+    background-color: gainsboro;
+    display: flex;
+    padding: 1px 1px;
+}
+.new {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #f8f8f8;
+}
+
+.header-icons a {
+    margin-left: 30px;
+    font-size: 25px;
+    color: black;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+    transition: transform 0.2s ease;    
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+header.new h1 {
+    margin: 100px;
+}
+
+
+
+.mens-section {
+    display: flex;
+    padding: 50px;
+    gap: 40px;
+    align-items: center;
+    background-color: #fafafa;
+}
+
+.mens-image img {
+    height: 500px;
+    width: auto;
+    border-radius: 10px;
+}
+.mens-content {
+    max-width: 500px;
+}
+
+.mens-content h2 {
+    color: firebrick;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.mens-content select {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.description {
+    font-size: 16px;
+    color: black;
+    line-height: 1.5;
+}
+.what{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.old{
+    display: flex;
+    background-color: white;
+    color: red;
+}
+.product-name {
+    font-family: "Dancing Script", cursive;
+    font-size: 2.50rem;
+     margin-top: 10px;
+    color: #333;
+}
+.discount-tag {
+    font-size: 40px;
+    font-family: "Playfair Display", serif;
+    margin-top: 10px;
+}
+
+.shop-btn{ 
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: crimson;
+    color: white;
+    display: inline-block;
+}
+.shop-btn button:hover{
+    background-color: greenyellow;
+}
+
+.hello{
+    position: absolute;
+    text-align: center;
+     top: 100px;
+     color: lemonchiffon;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.center{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+}
+.alltext{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    text-align: center;
+    color: aliceblue;
+}
+.custom-btn button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 200px;
+    height: 50px;
+}
+.custom-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+.custom-btn button:hover {
+    background-color: yellowgreen;
+    transform: scale(1.05);
+}
+
+.heading{
+display: flex;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+justify-content: center;
+color: lemonchiffon;
+}
+
+/* Tablet & smaller laptops */
+@media screen and (max-width: 1024px) {
+    .mens-section {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .mens-image img {
+        height: auto;
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .mens-content {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+
+    header.new h1 {
+        margin: 30px;
+        font-size: 2rem;
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+    .new,
+    header.new {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .header-icons a {
+        margin-left: 15px;
+        font-size: 20px;
+    }
+
+    .mens-section {
+        padding: 30px 15px;
+        gap: 25px;
+    }
+
+    .product-name {
+        font-size: 1.8rem;
+    }
+
+    .discount-tag {
+        font-size: 28px;
+    }
+
+    .shop-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .custom-btn button {
+        width: 90%;
+        font-size: 15px;
+    }
+
+    .hello {
+        font-size: 20px;
+        top: 70px;
+    }
+
+    .heading {
+        font-size: 22px;
+    }
+}
+
+/* Small phones */
+@media screen and (max-width: 480px) {
+    .mens-content h2 {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .header-icons a {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    .custom-btn button {
+        font-size: 14px;
+        height: 45px;
+        padding: 10px 20px;
+    }
+
+    .hello {
+        font-size: 16px;
+        top: 60px;
+    }
+
+    .alltext {
+        font-size: 14px;
+    }
+}
